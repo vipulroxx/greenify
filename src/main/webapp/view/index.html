@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- MATERIAL DESIGN & JQUERY-->
+<link
+	href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+	rel="stylesheet">
+<script
+	src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- STATIC FILES -->
+<link rel="stylesheet" href="/css/style.css">
+<script type="text/javascript" src="/js/table.js"></script>
+</head>
+<body>
+	<h1>GREENIFY</h1>
+	<br>
+	<div>
+		<label class="mdc-text-field mdc-text-field--filled">
+		<span class="mdc-text-field__ripple"></span>
+		<span class="mdc-floating-label" id="my-label-id">Filter Area</span>
+		<span class="mdc-line-ripple"></span>
+		<input
+			class="mdc-text-field__input" type="text"
+			aria-labelledby="my-label-id" id="inputarea">
+			<button class="mdc-icon-button material-icons" onclick="setUrl()">
+				<span class="material-icons">search</span>
+			</button>
+		
+		</label>
+	</div>
+	<div class="mdc-data-table">
+		<div class="mdc-data-table__table-container">
+			<table class="mdc-data-table__table" id="planttable"
+				aria-label="Dessert calories">
+				<thead>
+					<tr class="mdc-data-table__header-row">
+						<th class="mdc-data-table__header-cell" role="columnheader"
+							scope="col"><b>Scientific Name</b></th>
+						<th class="mdc-data-table__header-cell" role="columnheader"
+							scope="col"><b>Area</b></th>
+						<th class="mdc-data-table__header-cell" role="columnheader"
+							scope="col"><b>Read</b></th>
+					</tr>
+				</thead>
+				<tbody id="planttablebody" class="mdc-data-table__content">
+				</tbody>
+			</table>
+		</div>
+		<div style="margin-left:87%;">
+		<button class="mdc-icon-button material-icons" onclick="prevRows()">
+  			<div class="mdc-icon-button__ripple"></div>
+  				navigate_before
+		</button>
+		<button class="mdc-icon-button material-icons" onclick="nextRows()">
+  			<div class="mdc-icon-button__ripple"></div>
+  				navigate_next
+		</button>
+	</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+
+h1 {
+	color: #68a33e;
+	text-align: center;
+	font-size: 2em;
+}
+
+label, .mdc-data-table {
+	width: 50%;	
+	margin-left: 25%;
+}
+
+button {
+  --mdc-theme-primary: #68a33e;
+  margin: auto auto;
+}
